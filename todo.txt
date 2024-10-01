@@ -1,0 +1,29 @@
+To-Do List for RAG Application
+
+
+1) Install required Dependencies
+
+        Set Up Llama 3 for Embeddings and Querying
+
+         Install Llama 3 locally via Ollama.
+         Check steps here: https://ollama.com/
+
+
+2) ADD PDF's 
+        add the required pdf in 'data' folder to create a vector database
+
+3)Load PDF Data into Chroma Database
+       (if there's an existing chromadb database ,we can update by Load data, else --reset)
+
+4)Load data:
+      "python load_data.py"
+       Reset Chroma Database
+
+5)Reset the database:
+     "python load_data.py --reset"
+
+
+6) Run Streamlit Application
+
+     Start the Streamlit app:
+      "streamlit run query.py"
